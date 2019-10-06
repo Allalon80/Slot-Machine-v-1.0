@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add a HTML5 Slot Machine to your Site</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Get an HTML5 and jQuery Slot Machine for your site. Engage your visitors and improve your customers loyalty.">
+	<link href="css/style.css?v=4" rel="stylesheet" type="text/css" />
+	<link href="css/slots.css?v=2" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Rokkitt:400,700" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+
+	<!-- Start Visual Website Optimizer Asynchronous Code -->
+	<script type="text/javascript">
+	var _vwo_code=(function(){
+	var account_id=145730,
+	settings_tolerance=2000,
+	library_tolerance=2500,
+	use_existing_jquery=false,
+	// DO NOT EDIT BELOW THIS LINE
+	f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+	</script>
+	<!-- End Visual Website Optimizer Asynchronous Code -->
+</head>
+
+<body data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+
+<div class="container">
+	<header id="header">
+<div class="clearfix"></div>
+    	<div class="headline">
+        	<h1>This is a <strong>DEMO </strong> press SPIN to RUN</h1>
+        </div>
+    </header>
+    <a id="try"></a>
+	<section id="slot_machines_container">
+	
+		<div id="slot_machines_backgrounds_container">
+			<div id="slot_machines_backgrounds">
+				<div id="changeable_background_1" data-id="1" class="changeable_background"></div>
+				<div id="changeable_background_2" data-id="2" class="changeable_background" style="display: none;"></div>
+				<div id="changeable_background_3" data-id="3" class="changeable_background" style="display: none;"></div>
+				<div id="changeable_background_4" data-id="4" class="changeable_background" style="display: none;"></div>
+			</div>
+		</div>
+		<div id="slotsSelectorWrapper" class="slotMachine1 reelSet1" data-machine="1" data-reel="1">
+			<div id="SlotsOuterContainer" class="won">
+				<div id="SlotsInnerContainer"> <!-- Just to be able to set the "won!" extra background -->
+				
+					<div id="prizes_list">
+							<div id="prizes_list_slotMachine1" class="prizes_list_slot_machine">
+								
+										<div id="trPrize_32" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_6"></div>
+												<div class="reel2 reelIcon prize_6"></div>
+												<div class="reel3 reelIcon prize_6"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="200.00">2000</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_33" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_4"></div>
+												<div class="reel2 reelIcon prize_4"></div>
+												<div class="reel3 reelIcon prize_4"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="50.00">500</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_37" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_2"></div>
+												<div class="reel2 reelIcon prize_2"></div>
+												<div class="reel3 reelIcon prize_2"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="20.00">200</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_40" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_1slash3"></div>
+												<div class="reel2 reelIcon prize_5slash2"></div>
+												<div class="reel3 reelIcon prize_4slash6"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="16.00">160</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_34" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_5"></div>
+												<div class="reel2 reelIcon prize_5"></div>
+												<div class="reel3 reelIcon prize_5"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="15.00">150</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_38" class="trPrize won">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_1"></div>
+												<div class="reel2 reelIcon prize_1"></div>
+												<div class="reel3 reelIcon prize_1"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="14.00">140</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_35" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_3"></div>
+												<div class="reel2 reelIcon prize_3"></div>
+												<div class="reel3 reelIcon prize_3"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="12.00">120</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_41" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_1slash3slash5"></div>
+												<div class="reel2 reelIcon prize_1slash3slash5"></div>
+												<div class="reel3 reelIcon prize_1slash3slash5"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="7.00">70</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_45" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_stardot5"></div>
+												<div class="reel2 reelIcon prize_stardot5"></div>
+												<div class="reel3 reelIcon prize_stardot5"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="4.00">40</span>
+											<div class="clearer"></div>
+										</div>
+
+									</div>
+								<div id="prizes_list_slotMachine2" style="display: none;" class="prizes_list_slot_machine">
+								
+										<div id="trPrize_267" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_4"></div>
+												<div class="reel2 reelIcon prize_4"></div>
+												<div class="reel3 reelIcon prize_4"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="50.00">500</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_268" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_5"></div>
+												<div class="reel2 reelIcon prize_5"></div>
+												<div class="reel3 reelIcon prize_5"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="20.00">200</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_271" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_2"></div>
+												<div class="reel2 reelIcon prize_2"></div>
+												<div class="reel3 reelIcon prize_2"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="15.00">150</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_272" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_1"></div>
+												<div class="reel2 reelIcon prize_1"></div>
+												<div class="reel3 reelIcon prize_1"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="14.00">140</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_273" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_3"></div>
+												<div class="reel2 reelIcon prize_3"></div>
+												<div class="reel3 reelIcon prize_3"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="12.00">120</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_278" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_2slash3"></div>
+												<div class="reel2 reelIcon prize_2slash3"></div>
+												<div class="reel3 reelIcon prize_2slash3"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="6.00">60</span>
+											<div class="clearer"></div>
+										</div>
+
+									</div>
+									<div id="prizes_list_slotMachine3" style="display: none;" class="prizes_list_slot_machine">
+								
+										<div id="trPrize_281" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_6"></div>
+												<div class="reel2 reelIcon prize_6"></div>
+												<div class="reel3 reelIcon prize_6"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="200.00">2000</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_282" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_4"></div>
+												<div class="reel2 reelIcon prize_4"></div>
+												<div class="reel3 reelIcon prize_4"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="50.00">500</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_283" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_5"></div>
+												<div class="reel2 reelIcon prize_5"></div>
+												<div class="reel3 reelIcon prize_5"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="20.00">200</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_285" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_5"></div>
+												<div class="reel2 reelIcon prize_1"></div>
+												<div class="reel3 reelIcon prize_5"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="18.00">180</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_286" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_2"></div>
+												<div class="reel2 reelIcon prize_2"></div>
+												<div class="reel3 reelIcon prize_2"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="15.00">150</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_287" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_1"></div>
+												<div class="reel2 reelIcon prize_1"></div>
+												<div class="reel3 reelIcon prize_1"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="14.00">140</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_288" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_3"></div>
+												<div class="reel2 reelIcon prize_3"></div>
+												<div class="reel3 reelIcon prize_3"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="12.00">120</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_293" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_2slash3"></div>
+												<div class="reel2 reelIcon prize_2slash3"></div>
+												<div class="reel3 reelIcon prize_2slash3"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="6.00">60</span>
+											<div class="clearer"></div>
+										</div>
+
+										</div>
+										<div id="prizes_list_slotMachine4" style="display: none;" class="prizes_list_slot_machine">
+								
+										<div id="trPrize_296" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_6"></div>
+												<div class="reel2 reelIcon prize_6"></div>
+												<div class="reel3 reelIcon prize_6"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="200.00">2000</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_297" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_4"></div>
+												<div class="reel2 reelIcon prize_4"></div>
+												<div class="reel3 reelIcon prize_4"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="50.00">500</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_298" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_5"></div>
+												<div class="reel2 reelIcon prize_5"></div>
+												<div class="reel3 reelIcon prize_5"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="20.00">200</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_300" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_5"></div>
+												<div class="reel2 reelIcon prize_1"></div>
+												<div class="reel3 reelIcon prize_5"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="18.00">180</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_304" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_1slash3"></div>
+												<div class="reel2 reelIcon prize_5slash2"></div>
+												<div class="reel3 reelIcon prize_4slash6"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="16.00">160</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_301" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_2"></div>
+												<div class="reel2 reelIcon prize_2"></div>
+												<div class="reel3 reelIcon prize_2"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="15.00">150</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_302" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_1"></div>
+												<div class="reel2 reelIcon prize_1"></div>
+												<div class="reel3 reelIcon prize_1"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="14.00">140</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_299" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_2slash4slash6"></div>
+												<div class="reel2 reelIcon prize_2slash4slash6"></div>
+												<div class="reel3 reelIcon prize_2slash4slash6"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="12.00">120</span>
+											<div class="clearer"></div>
+										</div>
+
+									</div>
+									<div id="prizes_list_slotMachine5" style="display: none;" class="prizes_list_slot_machine">
+								
+										<div id="trPrize_312" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_4"></div>
+												<div class="reel2 reelIcon prize_4"></div>
+												<div class="reel3 reelIcon prize_4"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="50.00">500</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_313" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_5"></div>
+												<div class="reel2 reelIcon prize_5"></div>
+												<div class="reel3 reelIcon prize_5"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="20.00">200</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_319" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_1slash3"></div>
+												<div class="reel2 reelIcon prize_5slash2"></div>
+												<div class="reel3 reelIcon prize_4slash6"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="16.00">160</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_316" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_2"></div>
+												<div class="reel2 reelIcon prize_2"></div>
+												<div class="reel3 reelIcon prize_2"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="15.00">150</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_317" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_1"></div>
+												<div class="reel2 reelIcon prize_1"></div>
+												<div class="reel3 reelIcon prize_1"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="14.00">140</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_318" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_3"></div>
+												<div class="reel2 reelIcon prize_3"></div>
+												<div class="reel3 reelIcon prize_3"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="12.00">120</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_320" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_1slash3slash5"></div>
+												<div class="reel2 reelIcon prize_1slash3slash5"></div>
+												<div class="reel3 reelIcon prize_1slash3slash5"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="7.00">70</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_322" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_1slash5"></div>
+												<div class="reel2 reelIcon prize_1slash5"></div>
+												<div class="reel3 reelIcon prize_1slash5"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="7.00">70</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_323" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_2slash3"></div>
+												<div class="reel2 reelIcon prize_2slash3"></div>
+												<div class="reel3 reelIcon prize_2slash3"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="6.00">60</span>
+											<div class="clearer"></div>
+										</div>
+
+								
+										<div id="trPrize_324" class="trPrize">
+											<div class="tdReels">
+												<div class="reel1 reelIcon prize_stardot5"></div>
+												<div class="reel2 reelIcon prize_stardot5"></div>
+												<div class="reel3 reelIcon prize_stardot5"></div>
+												<div class="clearer"></div>
+											</div>
+											<span class="tdPayout" data-basepayout="4.00">40</span>
+											<div class="clearer"></div>
+										</div>
+
+									</div>
+								</div>
+
+					<div id="slotMachineContainer">
+
+						<div id="ReelContainer">
+							<div id="reel1" class="reel" style="top: -634px;"></div>
+							<div id="reel2" class="reel" style="top: -634px;"></div>
+							<div id="reel3" class="reel" style="top: -634px;"></div>
+							<div id="reelOverlay"></div>
+						</div>
+
+						<div id="betContainer">
+							<span id="lastWin">140</span>
+							<span id="credits">483</span>
+							<span id="bet">10</span>
+							<span id="dayWinnings">555</span>
+							<span id="lifetimeWinnings">555</span>
+							<div id="betSpinUp"></div>
+							<div id="betSpinDown"></div>
+						</div>
+
+						<div id="spinButton" class=""></div>
+					</div>
+
+					<div id="soundOffButton"></div>
+
+					
+
+					<script type="text/javascript">
+						var machineName = 'slotmachine1';
+						var minBet = 1;
+						var maxBet = 10;
+						var numIconsPerReel = 6;
+						var windowID = 10724;
+					</script>
+				</div>
+			</div>
+		</div>
+</section>
+</div><!-- #container -->
+
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.accordion.js"></script>
+<script type="text/javascript" src="js/jquery.autogrow.js"></script>
+<script type="text/javascript" src="js/soundmanager2.js?v=2"></script>
+<script type="text/javascript" src="js/index.js?v=2"></script>
+<script type="text/javascript" src="js/slots.js?v=4"></script>
+<script type="text/javascript" src="js/slotmachineswitcher.js?v=2"></script>
+
+</body>
+</html>

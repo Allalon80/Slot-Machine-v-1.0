@@ -1,0 +1,465 @@
+html, body {
+	background: #e8e8e8 url( "../img/bg_header.jpg") top center no-repeat;
+	margin: 0;
+	padding:0;
+	font-family: arial;
+	font-size: 14px;
+	color: #000;
+	min-width: 1010px;
+}
+div.clearfix {
+	clear:both;
+}
+h1 {
+	font-weight:normal;
+}
+h2 {
+	margin:0;
+	padding:0;
+	font-family: 'Rokkitt', 'Rockwell', 'Arial', 'sans-serif';
+	color: #000;
+	text-shadow: 2px 2px 1px #fff;
+	font-size: 40px;
+	font-weight: normal;
+}
+/* -------- layout --------*/
+.container {
+
+}
+.container header#header {
+	height: 177px;
+	margin: 0 auto;
+	max-width: 1000px;
+	position: relative;
+	z-index: 10; /* have the headline show on top of the slot machine */
+}
+.container header#header .logo{
+	float:left;
+	width: 261px;
+	padding-top: 20px;
+}
+.container header#header nav.nav {
+	float: left;
+	width: 635px;
+	margin: 51px 0 0 90px;
+}
+.container header#header nav.nav ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-align: right;
+}
+.container header#header nav.nav ul li {
+	margin:0;
+	padding:0;
+	display: inline-block;
+	vertical-align: middle;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 2px;
+	font-size: 19px;
+}
+.container header#header nav.nav ul li a {
+	padding: 10px;
+	margin: 0 5px;
+	color: #FFF;
+	text-decoration: none;
+	display:block;
+	-webkit-transition: all 0.4s ease;
+	   -moz-transition: all 0.4s ease;
+	     -o-transition: all 0.4s ease;
+	        transition: all 0.4s ease;
+	        border-radius: 5px;
+	   -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+		 -o-border-radius: 5px;
+}
+.container header#header nav.nav ul li a:hover {
+	opacity:0.6;
+	filter:alpha(opacity=60);
+}
+.container header#header nav.nav ul li a.contact {
+	background: #bb151c;
+}
+.container header#header .headline {
+	position: absolute;
+	top: 173px;
+	left:0;
+	background-color: #FFF;
+	        border-radius: 13px;
+	   -moz-border-radius: 13px;
+	     -o-border-radius: 13px;
+	-webkit-border-radius: 13px;
+	font-family: 'Rokkitt', 'Rockwell', 'Arial', 'sans-serif';
+	color: #141414;
+	font-size: 32px;
+	text-transform: uppercase;
+	line-height: 1.8em;
+	font-weight: normal;
+	text-align: center;
+	width:100%;
+		    box-shadow: 0 0 30px #666;
+	   -moz-box-shadow: 0 0 30px #666;
+	-webkit-box-shadow: 0 0 30px #666;
+	     -o-box-shadow: 0 0 30px #666;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ebebeb 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebebeb), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ebebeb 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ebebeb 0%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ebebeb 0%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ebebeb 0%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+.container header#header .headline h1 {
+	padding: 0 60px;
+	margin: 26px 0;
+}
+
+/*-------------------------------------------*/
+
+#slot_machines_container {
+	background: #ccc;
+	height: 800px;
+	position: relative;
+}
+/* rest of the style on slots.css */
+
+
+#tryMe {
+	position: absolute;
+	width: 143px; height: 116px;
+	background: url( "../img/try_me.png") top left no-repeat;
+	top: 615px; left: 740px;
+}
+
+.black_bar #tryMe {
+	top: 0px; left: 800px;
+}
+
+/*-------------------------------------------*/
+
+.container .black_bar {
+	height: 71px;
+	max-width: 960px;
+	background: #3c3c3c; /* Old browsers */
+	background: -moz-linear-gradient(top, #3c3c3c 1%, #020202 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#3c3c3c), color-stop(100%,#020202)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #3c3c3c 1%,#020202 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #3c3c3c 1%,#020202 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #3c3c3c 1%,#020202 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #3c3c3c 1%,#020202 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c3c3c', endColorstr='#020202',GradientType=0 ); /* IE6-9 */
+	margin: -15px auto 0;
+	font-family: "Trebuchet MS";
+	color: #fff;
+	font-size: 47px;
+	font-style: italic;
+	padding: 12px 20px;
+	position: relative; z-index: 10; /* show on top of the slot machine */
+}
+.container .black_bar p {
+	margin: 4px 0 0;
+	padding: 4px 0 0;
+	float: left;
+}
+.container .black_bar .options {
+	float:right;
+	font-size: 28px;
+	height: 70px;
+}
+.container .black_bar .options ul{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+.container .black_bar .options ul li{
+	display: inline-block;
+	vertical-align: middle;
+}
+.container .black_bar .options ul li.try_it{ padding-right: 55px; }
+.container .black_bar .options ul li a{
+	width:70px;
+	padding: 0 5px;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: center;
+	font-style: normal;
+	background: url( "../img/selectors.png") 50% 38px no-repeat #131313;
+	display: block;
+	height: 72px;
+}
+.container .black_bar .options ul li a:hover {
+	color: #f8ff3e;
+	box-shadow: 0 0 10px #f8ff3e;
+	background: url("../img/selectors.png") 50% -52px no-repeat #131313;
+}
+.container .black_bar .options ul li div p {
+	margin: 0;
+	padding: 0;
+}
+
+/*-------------------------------------------*/
+
+.container section#main_content {
+	background: url("../img/shad.png") top center no-repeat;
+}
+.container section#main_content .main {
+	max-width: 870px;	
+	padding: 30px 65px;
+	margin: 0 auto;
+}
+.container section#main_content .main .examples {
+	padding: 20px 0;
+}
+.container section#main_content .main .examples img {
+	margin: 0 5px;
+	border:0;
+	-webkit-transition: all 0.4s ease;
+	   -moz-transition: all 0.4s ease;
+	     -o-transition: all 0.4s ease;
+	        transition: all 0.4s ease;
+}
+.container section#main_content .main .examples img:hover{
+	opacity:0.6;
+	filter:alpha(opacity=60);
+}
+
+/*-------------------------------------------*/
+.container section#main_content .main .overview img.html5_shield{
+	float: right; margin-top: -25px;
+}
+
+.container section#main_content .main .overview{
+	margin-top: 60px;
+	padding: 20px 0 0 0;
+}
+.container section#main_content .main .box {
+	padding: 30px 40px;
+	background-color: #f4f4f4;
+	margin: 12px 0 0;
+	line-height: 20px;
+}
+.container section#main_content .main .box p{
+	margin: 4px 0;
+	padding: 4px 0;
+}
+
+.container section#main_content .main .box ul {
+	margin: 0 5px;
+	padding: 0 5px;
+}
+.container section#main_content .main .box ul li{
+	margin: 5px 0;
+	padding: 5px 0;
+	padding-left: 23px;
+	list-style: none;
+	background: url("../img/check.png") 0 11px no-repeat;
+}
+.container section#main_content .main .box p.title {
+	font-size: 24px;
+	font-weight: bold;
+}
+.container section#main_content .main .shad {
+	height:35px;
+	background: url("../img/shad.png") top center no-repeat;
+}
+
+/*-------------------------------------------*/
+
+.container section#main_content .main .testimonials {
+	margin: 30px 0 0;
+}
+.container section#main_content .main .testimonials .testimonial_container {
+}
+.container section#main_content .main .testimonials .testimonial_container .avatar{
+	float:left;
+	width: 70px;
+	margin: 0 20px 0 0;
+	text-align: center;
+}
+.container section#main_content .main .testimonials .testimonial_container .avatar img{
+	margin: 0 0 10px 0;
+}
+.container section#main_content .main .testimonials .testimonial_container .balloon {
+	background-color: #f4f4f4;
+	border-radius: 10px;
+	border: 1px solid #cfcfcf;
+	float: left;
+	width: 728px;
+	padding: 25px;
+	position:relative;
+}
+.container section#main_content .main .testimonials .testimonial_container .balloon .tail {
+	background: url("../img/tail2.png") top left no-repeat;
+	width: 14px;
+	height: 23px;
+	position: absolute;
+	top: 20px;
+	left: -13px;
+}
+.container section#main_content .main .testimonials .balloon_sh{
+	background: url("../img/shad_2.png") top right no-repeat;
+	height:15px;
+}
+.container section#main_content .main .testimonials .testimonial_container .balloon .text{
+	float: left;
+	width: 550px;
+	padding: 0 18px 0 0;
+	line-height: 1.25em;
+}
+.container section#main_content .main .testimonials .testimonial_container .balloon .text p{
+	margin: 4px 0;
+	padding: 4px 0;
+}
+.container section#main_content .main .testimonials .testimonial_container .balloon .text p.heading{
+	font-size: 20px;
+}
+.container section#main_content .main .testimonials .testimonial_container .balloon .pict{
+	float:left;
+	width: 160px;
+}
+
+/*-------------------------------------------*/
+
+.container section#contact {
+	background-color: #00538a;
+	padding: 60px 0;
+}
+.container section#contact .contact_form {
+	max-width: 880px;
+	margin:0 auto;
+	background-color: #00416c;
+	padding: 60px;
+	color: #fff;
+	font-size: 25px;
+ 	        text-shadow: 2px 2px 3px #002d4b;
+	   -moz-text-shadow: 2px 2px 3px #002d4b;
+	-webkit-text-shadow: 2px 2px 3px #002d4b;
+	     -o-text-shadow: 2px 2px 3px #002d4b;
+}
+.container section#contact .contact_form h2 {
+	color: #fff;
+	font-size: 70px;
+	font-weight: normal;
+	text-transform: uppercase;
+ 	        text-shadow: 2px 2px 3px #002d4b;
+	   -moz-text-shadow: 2px 2px 3px #002d4b;
+	-webkit-text-shadow: 2px 2px 3px #002d4b;
+	     -o-text-shadow: 2px 2px 3px #002d4b;
+}
+
+.container section#contact .contact_form .emailaddress { margin-top: 15px; }
+.container section#contact .contact_form .emailaddress a {
+	color: white; font-size: 30px;
+	text-decoration: none;
+}
+.container section#contact .contact_form .emailaddress a:hover { text-decoration: underline; }
+
+/*-------------------------------------------*/
+
+#other_games {
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 30px 0;
+}
+#other_games p {
+	text-align: left;
+	font-size: 20px;
+	margin: 0 0 25px 30px;
+}
+#other_games a {
+	margin: 0px;
+}
+
+footer#footer {
+	background: #171717;
+	padding: 30px 0;
+}
+footer#footer .inner_footer {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+footer#footer .inner_footer p {
+	font-size: 14px;
+	color: #a9a9a9;
+	margin:0;
+	padding:0;
+	        text-shadow: 2px 2px 2px #000;
+	-webkit-text-shadow: 2px 2px 2px #000;
+  	   -moz-text-shadow: 2px 2px 2px #000;
+	     -o-text-shadow: 2px 2px 2px #000;
+}
+/*-------- ACCORDION -------------*/
+/* Flexible Slide-to-top Accordion Style*/
+.wrapper{
+}
+.st-accordion{
+    width:100%;
+    min-width:270px;
+    margin: 0 auto;
+}
+.st-accordion ul li{
+    overflow: hidden;
+	background: none !important;
+	padding:0 !important;
+	margin: 15px 0 !important;
+}
+.st-accordion ul li:first-child{
+    border-top:none;
+}
+.st-accordion ul li > a{
+    display: block;
+	position: relative;
+	outline:none;
+    -webkit-transition:  color 0.2s ease-in-out;
+	-moz-transition:  color 0.2s ease-in-out;
+	-o-transition:  color 0.2s ease-in-out;
+	-ms-transition:  color 0.2s ease-in-out;
+	transition:  color 0.2s ease-in-out;
+	color:#bb151c;
+	font-size: 20px;
+	text-decoration: none;
+}
+.st-accordion ul li > a span{
+	background: transparent url("../img/arrow.png") no-repeat center center;
+	text-indent:-9000px;
+	width: 26px;
+	height: 14px;
+	position: absolute;
+	top: 7px;
+	right: 3px;
+	margin-top: -7px;
+	-webkit-transition:  all 0.2s ease-in-out;
+	-moz-transition:  all 0.2s ease-in-out;
+	-o-transition:  all 0.2s ease-in-out;
+	-ms-transition:  all 0.2s ease-in-out;
+	transition:  all 0.2s ease-in-out;
+}
+.st-accordion ul li.st-open > a span{
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+.st-content{
+    padding: 5px 0px 30px 0px;
+	width: 660px;
+	text-align: justify;
+}
+.st-content p{
+
+}
+.st-content img{
+    width:125px;
+    border-right:1px solid #fff;
+    border-bottom:1px solid #fff;
+}
+@media screen and (max-width: 320px){
+	.st-accordion ul li > a{
+		font-size:36px;
+	}
+}
